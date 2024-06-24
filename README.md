@@ -1,3 +1,5 @@
-# baobab
+<p align="center" width="50%" height="50%">
+    <img width="100%" src="docs/images/baobab.png"> 
+</p>
 
-Is a Node based plugin for interfacing with GStreamer pipelines for constructing media applications.
+GStreamer pipelines for constructing media applications using Node.
