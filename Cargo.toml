@@ -3,4 +3,44 @@ name = "baobab"
 version = "0.1.0"
 edition = "2021"
 
+[lib]
+name = "baobab"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[[bin]]
+name = "baobab"
+path = "src/bin/baobab.rs"
+
 [dependencies]
+anyhow = "1.0.68"
+async-std = { version = "1.7", features = ["unstable"] }
+async-trait = "0.1.57"
+axum = "0.6.2"
+clap = "2.33"
+crossbeam-channel = "0.5.6"
+deno_bindgen = "0.8.1"
+eyre = "0.6.5"
+futures-util = "0.3.17"
+gstreamer = "0.19.5"
+gstreamer-video = "0.16"
+once_cell = "1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0.38"
+tokio = { version = "1.25", features = ["full"] }
+tokio-stream = "0.1"
+tokio-test = "0.4.2"
+tokio-tungstenite = "*"
+toml = "0.7.3"
+tower = { version = "0.4", features = ["full"] }
+tower-http = { version = "0.3.5", features = ["fs"] }
+xcb = "1.2.0"
+
+[dev-dependencies]
+tracing = "0.1.37"
+tracing-futures = "0.2"
+tracing-gstreamer = "0.5.0"
+tracing-log = "0.1.2"
+tracing-subscriber = { version = "0.3.16", features = ["json", "env-filter"] }
+tracing-tracy = "0.10.2"
