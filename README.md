@@ -6,31 +6,30 @@ General purpose media server for processing and streaming video content.
 
 #### Overview
 
-The goal of this project is to build a media server based on GStreamer and Rust. The server will be able to process and stream video content in real-time. The server will be able to handle multiple video streams and provide a REST API for interacting with the server. For WebRTC server support it will utilize the [Janus Gateway](https://github.com/meetecho/janus-gateway)
+The goal of this project is to build a media server based on GStreamer and Rust. The server will be able to process and stream video content in real-time. The server will be able to handle multiple video streams and provide a REST API, or Deno plugin for interacting with the server.
 
 #### Features
 
 ##### Web
 
--   [Deno](https://deno.land/)
+- [Deno](https://deno.land/)
 
 ##### Networking
 
--   [ ] WebRTC
--   [ ] RTMP
--   [ ] HLS
--   [ ] DASH
--   [ ] SRT
+- [ ] WebRTC
+- [ ] RTMP
+- [ ] HLS
+- [ ] DASH
+- [ ] SRT
 
 #### Development Requirements
 
--   Deno
--   [Deno Bindgen](https://github.com/denoland/deno_bindgen)
--   just (cargo install just)
--   Rust 1.73+
--   Docker
--   Nvidia GPU (optional)
--   GStreamer 1.23 and related dependencies [see](https://github.com/SteveMcFarlin/gst-docker)
+- Deno (Optional)
+- [Janus Gateway](https://github.com/meetecho/janus-gateway) (Optional)
+- just (cargo install just)
+- Rust 1.73+
+- Docker
+- GStreamer 1.23 and related dependencies [see](https://github.com/SteveMcFarlin/gst-docker)
 
 #### Development
 
