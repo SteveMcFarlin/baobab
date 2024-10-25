@@ -1,5 +1,5 @@
 [workspace]
-members = ["./node"]
+members = ["./deno", "./baobab"]
 resolver = "2"
 
 [profile.release]
