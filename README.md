@@ -25,6 +25,7 @@ The goal of this project is to build a media server based on GStreamer and Rust.
 #### Development Requirements
 
 - Deno (Optional)
+- - [Deno Bindgen](https://github.com/denoland/deno_bindgen)
 - [Janus Gateway](https://github.com/meetecho/janus-gateway) (Optional)
 - just (cargo install just)
 - Rust 1.73+
